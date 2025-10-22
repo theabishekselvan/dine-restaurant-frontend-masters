@@ -1,0 +1,39 @@
+@layer colors {
+  :root {
+    --c-brown: #9e7f66;
+    --c-black: #111111;
+    --c-white: #ffffff;
+    --c-gray-100: #17192b;
+    --c-gray-300: #242b37;
+    --c-gray-500: #5c6779;
+    --color-background-dark: var(--c-black);
+    --color-text-light: var(--c-white);
+  }
+}
+
+@layer global {
+  *, 
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
