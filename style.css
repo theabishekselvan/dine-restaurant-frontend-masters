@@ -138,6 +138,10 @@
       grid-column: 2;
     }
 
+    >.fullbleed {
+      grid-column: 1 / -1;
+    }
+
     @media (width >= calc(700/16 * 1rem)) {
       grid-template-columns: 1fr min(100% - 80px, 1110px) 1fr;
     }
