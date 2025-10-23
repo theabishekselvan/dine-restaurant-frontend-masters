@@ -163,3 +163,22 @@
     }
   }
 }
+
+@layer button {
+  .button {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--c-white);
+    letter-spacing: calc(2.5/16 * 1em);
+    border: 1px solid var(--color-text-light);
+    width: fit-content;
+    padding: 24px 55px;
+    transition: 250ms ease-in-out;
+    transition-property: background, color;
+
+    &:hover {
+      background: var(--color-text-light);
+      color: var(--color-background-dark)
+    }
+  }
+}
